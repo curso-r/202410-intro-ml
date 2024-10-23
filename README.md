@@ -25,13 +25,22 @@ Fora do horário de aula ou monitoria:
 
 ## Slides
 
-| Slide |
-|:------|
+| Slide                                                                                                       |
+|:------------------------------------------------------------------------------------------------------------|
+| [00-intro-curso.html](https://curso-r.github.io/202410-intro-ml/slides/00-intro-curso.html)                 |
+| [01-intro-ml.html](https://curso-r.github.io/202410-intro-ml/slides/01-intro-ml.html)                       |
+| [02-intro-classificacao.html](https://curso-r.github.io/202410-intro-ml/slides/02-intro-classificacao.html) |
+| [03-modelos-de-arvores.html](https://curso-r.github.io/202410-intro-ml/slides/03-modelos-de-arvores.html)   |
 
 ## Scripts utilizados em aula
 
-| Exemplo |
-|:--------|
+| Exemplo                                                                                                                                       |
+|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| [01-algoritmo-machine-learning-exemplo.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/01-algoritmo-machine-learning-exemplo.R) |
+| [01-tidymodels.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/01-tidymodels.R)                                                 |
+| [02-modelo-machine-learning.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/02-modelo-machine-learning.R)                       |
+| [02-tidymodels_apenas_aplicacao.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/02-tidymodels_apenas_aplicacao.R)               |
+| [meu_primeiro_modelo.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/meu_primeiro_modelo.rds)                                 |
 
 ## Práticas
 
