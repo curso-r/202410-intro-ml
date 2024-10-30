@@ -40,7 +40,11 @@ Fora do horário de aula ou monitoria:
 | [01-tidymodels.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/01-tidymodels.R)                                                 |
 | [02-modelo-machine-learning.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/02-modelo-machine-learning.R)                       |
 | [02-tidymodels_apenas_aplicacao.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/02-tidymodels_apenas_aplicacao.R)               |
+| [05-varios_graus.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/05-varios_graus.R)                                             |
+| [3-polinomios.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/3-polinomios.R)                                                   |
+| [4-polinomio_dados_novos.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/4-polinomio_dados_novos.R)                             |
 | [meu_primeiro_modelo.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/meu_primeiro_modelo.rds)                                 |
+| [polinomio_grau8.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/polinomio_grau8.rds)                                         |
 
 ## Práticas
 
