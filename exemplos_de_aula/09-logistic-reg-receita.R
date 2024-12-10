@@ -19,11 +19,12 @@ dados_numericos <- credit_data |>
   ) |>
   drop_na()
 
-dados <- credit_data |>
-  drop_na()
+dados <- credit_data  #drop_na()
 # isso aqui nao é muito legal! na proxima aula vamos ver como
 # melhorar para nao precisar manipular desse jeito antes de
 # modelar
+
+skimr::skim(dados)
 
 # Analises iniciais -------------------------------------------------------
 
@@ -40,12 +41,18 @@ teste <- testing(credit_initial_split)
 # receita -----------------------------------------------------------------
 
 receita <- recipe(Status ~ ., data = treino) |>
-  step_dummy(Records)
+  #step_naomit(everything()) |>
+  step_unknown(Home, Marital, Job) |>
+  #step_impute_median(Assets, Debt, Income) |>
+  step_impute_knn(Assets, Debt, Income, neighbors = tune()) |>
+  step_dummy(all_nominal_predictors()) |>
+  step_poly(Assets, Debt, Amount, Income, degree = tune())
 
-# esse comando abaixo é útil para que eu veja
-prep(receita) |>
-  juice() |>
-  View()
+# esse comando abaixo é útil para que eu veja os passos sendo executados
+
+# prep(receita) |>
+#   juice() |>
+#   skimr::skim()
 
 # modelo ------------------------------------------------------------------
 
@@ -66,17 +73,23 @@ reamostras <- vfold_cv(treino, v = 5)
 
 # tunagem -----------------------------------------------------------------
 
-metricas <- metric_set(mn_log_loss)
+metricas <- metric_set(mn_log_loss, accuracy, roc_auc)
 
 tunagem <- tune_grid(
   meu_fluxo,
   resamples = reamostras,
   metrics = metricas,
-  grid = grid_random(levels = 5, penalty(c(-12, 0)), degree(range = c(1, 5)))
+  control = control_grid(verbose = TRUE),
+  # esse comando é novo e controla a tunagem
+  # em particular verbose=TRUE manda ele
+  # imprimir na tela conforme vai ajustando
+  # modelos
+  grid = grid_regular(levels = 5, penalty(c(-4, -2)), degree(range = c(1, 5)), neighbors())
 )
 
-tune_bayes(meu_fluxo, resamples = reamostras)
+autoplot(tunagem)
 
+show_best(tunagem, metric = "accuracy")
 
 # graficos ----------------------------------------------------------------
 
@@ -87,8 +100,21 @@ autoplot(tunagem)
 
 workflow_final <- meu_fluxo |>
   finalize_workflow(
-    select_best(tunagem)
+    select_best(tunagem, metric = "accuracy")
   )
+
+
+# ultimo fit --------------------------------------------------------------
+
+ultimo_modelo <- last_fit(workflow_final, credit_initial_split,
+                          metrics = metricas)
+# ajustar o modelo na base de teste e coletar as predicoes
+
+collect_metrics(ultimo_modelo)
+
+collect_predictions(ultimo_modelo) |>
+  roc_curve(Status, .pred_bad) |>
+  autoplot()
 
 # modelo final
 
