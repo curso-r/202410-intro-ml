@@ -1,6 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 ## Informações importantes
 
 - Nosso blog: <https://curso-r.com/blog/>
@@ -43,10 +41,15 @@ Fora do horário de aula ou monitoria:
 | [05-varios_graus.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/05-varios_graus.R)                                             |
 | [06-modelo_novo.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/06-modelo_novo.R)                                               |
 | [07-cross-validation.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/07-cross-validation.R)                                     |
+| [08-logistic-reg.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/08-logistic-reg.R)                                             |
+| [09-arvore-vs-regressao.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/09-arvore-vs-regressao.R)                               |
+| [09-logistic-reg-receita.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/09-logistic-reg-receita.R)                             |
+| [10-random-frest.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/10-random-frest.R)                                             |
 | [3-polinomios.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/3-polinomios.R)                                                   |
 | [4-polinomio_dados_novos.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/4-polinomio_dados_novos.R)                             |
 | [meu_primeiro_modelo.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/meu_primeiro_modelo.rds)                                 |
 | [polinomio_grau8.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/polinomio_grau8.rds)                                         |
+| [rascunho_exercicio.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/rascunho_exercicio.R)                                       |
 
 ## Práticas
 
