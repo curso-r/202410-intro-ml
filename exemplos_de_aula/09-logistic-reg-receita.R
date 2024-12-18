@@ -120,7 +120,9 @@ collect_predictions(ultimo_modelo) |>
 
 # antes teria que fazer o de treino/teste pra ver se nao overfitou...
 
-modelo_final <- fit(workflow_final, dados_numericos)
+modelo_final <- fit(workflow_final, dados)
+
+modelo_final |> pull_workflow_fit() |> vi()
 
 dados_com_previsao <- dados_numericos |>
   bind_cols(

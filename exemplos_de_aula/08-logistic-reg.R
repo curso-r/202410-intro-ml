@@ -72,7 +72,7 @@ tunagem <- tune_grid(
   meu_fluxo,
   resamples = reamostras,
   metrics = metricas,
-  grid = grid_random(levels = 5, penalty(c(-12, 0)), degree(range = c(1, 5)))
+  grid = grid_regular(levels = 5, penalty(c(-12, 0)))
 )
 
 tune_bayes(meu_fluxo, resamples = reamostras)
