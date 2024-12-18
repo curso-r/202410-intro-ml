@@ -45,6 +45,9 @@ Fora do horário de aula ou monitoria:
 | [09-arvore-vs-regressao.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/09-arvore-vs-regressao.R)                               |
 | [09-logistic-reg-receita.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/09-logistic-reg-receita.R)                             |
 | [10-random-frest.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/10-random-frest.R)                                             |
+| [11-xgboost-tunagem.Rmd](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/11-xgboost-tunagem.Rmd)                                   |
+| [12-modelo_vip.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/12-modelo_vip.R)                                                 |
+| [12-rf-xgboost-na-mao.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/12-rf-xgboost-na-mao.R)                                   |
 | [3-polinomios.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/3-polinomios.R)                                                   |
 | [4-polinomio_dados_novos.R](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/4-polinomio_dados_novos.R)                             |
 | [meu_primeiro_modelo.rds](https://curso-r.github.io/202410-intro-ml/exemplos_de_aula/meu_primeiro_modelo.rds)                                 |
